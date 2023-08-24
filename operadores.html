@@ -1,0 +1,29 @@
+<html>
+    <script>
+        /*var nome = prompt("Digite seu nome:");
+        var evazio = nome == ""; // false
+        if (!evazio) {
+            console.log(nome);
+        } else {
+            console.log("nome ta vazio!");
+        }*/
+
+        var letra = prompt("Digite uma letra:"); // Digitou "a"
+        var usuarioDigitouLetra = letra != "" // true
+        var a = letra == "a" || letra == "A"; // true
+        var e = letra == "e" || letra == "E"; // false
+        // ele tem digitar a letra (&& AND), mas a letra pode ser A OU (||) E.
+        if (usuarioDigitouLetra && (a || e)) { // Se o que o usuário digitou for diferente de vazio
+            console.log("É uma vogal!");
+        } else {
+            console.log("É uma consoante ou o usuário não inseriu a letra");
+        }
+
+        var letra = prompt("Digite uma letra:"); // Digitou "a"
+        if ((letra != "") && ((letra == "a" || letra == "A") || (letra == "e" || letra == "E"))) { 
+            console.log("É uma vogal!");
+        } else {
+            console.log("É uma consoante ou o usuário não inseriu a letra");
+        }        
+    </script>
+</html>
