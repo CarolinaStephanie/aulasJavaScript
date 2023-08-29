@@ -1,31 +1,28 @@
 <html>
-    <script>
-        function saudacoes() {
-            console.log("Bem-vindooooss");
-        }
-        function alunos() {
-            saudacoes();
-            console.log("Oi alunos");
-        }
+  <script>
+    var numero;
+    function saudacoes() {
+      console.log("Bem-vindooooss");
+    }
+    function alunos() {
+      saudacoes();
+      console.log("Oi alunos");
+    }
 
-        // saudacoes();
-        alunos();
+    // saudacoes();
+    alunos();
 
+    // atividade aula
+    function verificaPar() {
+      numero = prompt("Digite um número");
+      if (numero % 2 == 0) {
+        console.log("é par");
+      } else {
+        console.log("é impar!");
+      }
+    }
 
-        // atividade aula
-        function verificaPar() {
-            var numero = prompt("Digite um número");
-            if (numero % 2 == 0 ) {
-                console.log("é par");
-            }else {
-                console.log("é impar!");
-            }
-        }
-
-        verificaPar();
-        verificaPar();
-
-
-
-    </script>
+    verificaPar();
+    verificaPar();
+  </script>
 </html>

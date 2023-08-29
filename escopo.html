@@ -1,0 +1,49 @@
+<html>
+  <script>
+    // escopo global
+    var global = 1;
+    // escopo de funcao
+
+    function escopoFuncao() {
+      var local = 2;
+      // escopo bloco
+      console.log(global);
+      if (local > global) {
+        // codigo
+        console.log(global);
+        var maior = true;
+      }
+    }
+
+    //Original:
+    console.log(x);
+    var x = 5;
+
+    //Interpretação:
+    var x;
+    console.log(x);
+    x = 5;
+
+    var x = 1;
+    console.log(x + " " + y); // '1 undefined'
+    var y = 2;
+
+    var x;
+    var y;
+    x = 1;
+    console.log(x + " " + y);
+    y = 2;
+
+    //Example 2 - Hoists
+    var num1 = 3;
+    num2 = 4;
+    console.log(num1 + " " + num2); //'3 4'
+    var num2; //Declara num2 para hoisting
+
+    var num1;
+    var num2;
+    num1 = 3;
+    num2 = 4;
+    console.log(num1 + " " + num2);
+  </script>
+</html>
