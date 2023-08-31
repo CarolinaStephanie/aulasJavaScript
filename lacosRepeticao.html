@@ -1,0 +1,111 @@
+<html>
+  <script>
+    for (let i = 0; i < 10; i++) {
+      // i começa de 0, enquanto o i < 10 ele entra na repeticao, quando termina a repeticao, ele incrementa + 1 unidade.
+      console.log(i);
+    }
+    console.log("fim do código");
+    for (let i = 10; i >= 0; i--) {
+      console.log(i);
+    }
+
+    // tabuada de um numero
+
+    let tabuada = (numero) => {
+      for (let i = 1; i <= 9; i++) {
+        let multiplicacao = numero * i;
+        console.log(numero + " * " + i + " = " + multiplicacao);
+      }
+    };
+
+    tabuada(5);
+
+    /*let numero = parseInt(prompt("Inserir Número"));
+
+    function produtorio(numero) {
+      let resultado = 1;
+      for (let i = 0; i <= numero; i++) {
+        resultado = resultado * i;
+      }
+      console.log("Produtório de " + numero + " = " + resultado);
+    }
+
+    produtorio(numero);
+*/
+    for (let i = 1; i <= 5; i++) {
+      // 1, 2, 3, 4, 5
+      //Se a variável i for igual à 3, o for será interrompido.
+      if (i == 3) {
+        break;
+      }
+      console.log(i);
+    }
+    console.log("acabou meu codigo");
+
+    for (let i = 1; i <= 5; i++) {
+      // 1, 2, 3, 4, 5
+      //Se a variável i for 3, não se interpreta essa repetição.
+      if (i == 3) {
+        continue;
+      }
+      console.log(i);
+    }
+    console.log("acabou meu codigo 2");
+
+    // correcao, para praticar:
+
+    /*let numero2 = parseInt(prompt("Digite um numero de 1 a 10:"));
+    function menoresNumeros(numero2) {
+      // numero = 7
+      for (let count = 1; count < numero2; count++) {
+        console.log(count);
+      }
+    }
+    menoresNumeros(numero2);*/
+
+    // contar de 1 a 10 com while
+
+    let variavel = 1;
+
+    while (variavel <= 10) {
+      console.log(variavel);
+      variavel = variavel + 1;
+    }
+
+    for (let variavel2 = 1; variavel2 <= 10; variavel2++) {
+      console.log(variavel2);
+    }
+
+    // atividade em sala 2
+
+    function fatorial(numero) {
+      // 5
+      let resultado = 1; // 1
+      while (numero > 1) {
+        resultado = resultado * numero;
+        // resultado = 1 * 5;
+        // resultado = 1 * 5 * 4 * 3 * 2
+        numero = numero - 1; // numero = 4
+        // numero = 3
+        // numero = 2
+        // numero = 1
+      }
+      return resultado;
+    }
+
+    let fatorialdoNumero = 4;
+    let resultadoFatorial = fatorial(fatorialdoNumero);
+    console.log(
+      "O fatorial de " + fatorialdoNumero + "e: " + resultadoFatorial
+    );
+
+    let repetir = false;
+    do {
+      console.log("Só uma vez!");
+    } while (repetir);
+
+    while (repetir) {
+      console.log("entrou");
+    }
+  </script>
+</html>

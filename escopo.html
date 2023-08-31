@@ -45,5 +45,17 @@
     num1 = 3;
     num2 = 4;
     console.log(num1 + " " + num2);
+
+    // atividade extra - numeros multiplos
+
+    var multiplos = (num1, num2) => {
+      var saoMultiplos = false;
+      if (num1 % num2 == 0) {
+        saoMultiplos = true;
+      }
+      return saoMultiplos;
+    };
+
+    console.log(multiplos(6, 3));
   </script>
 </html>
