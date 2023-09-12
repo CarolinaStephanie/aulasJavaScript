@@ -1,0 +1,24 @@
+<html>
+  <script>
+    //Declaração de array e variável para determinar quantidade
+    const listaNomes = []; // tamanho do array listaNomes = 0;
+    let quantidade = 5;
+
+    //   5 != 5 // false
+    while (listaNomes.length != quantidade) {
+      let entrada = prompt("Inserir nome"); // ana
+      listaNomes.push(entrada.toUpperCase()); // listaNomes = ["CAROL", "ANA"]
+      console.log(listaNomes.length); // 2
+    }
+    console.log(listaNomes);
+
+    //Concatenação com um novo array de dois elementos
+    const novaLista = listaNomes.concat(["ANA", "EMA"]);
+    console.log(novaLista);
+    //Saída com salto de linha após cada item usando join
+    console.log(novaLista.join("\n"));
+
+    /*const listaNomes = [ "Alice", "Bob", "Charlie" ];
+listaNomes = ["David", "Eve"]; */
+  </script>
+</html>

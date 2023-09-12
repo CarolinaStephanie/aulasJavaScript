@@ -1,0 +1,32 @@
+<html>
+  <script>
+    const numeros = ["carol", "ana", "beatriz", "lucas", "pedro"];
+
+    numeros.push("maria"); // adiciona no final do array
+    numeros.unshift("paulo"); // adiciona na frente do array
+    console.log(numeros);
+
+    let tamanhoArray = numeros.length;
+    console.log(tamanhoArray);
+
+    numeros.pop(); // remover do final
+    numeros.shift(); // remover da frente
+
+    console.log(numeros);
+    console.log();
+    tamanhoArray = numeros.length;
+    console.log(tamanhoArray);
+
+    for (let index = 0; index < tamanhoArray; index++) {
+      console.log(index);
+      console.log(numeros[index]);
+    }
+
+    console.log(numeros.join(", "));
+    const objetos = ["mesa", "cadeira", "lapis"];
+    let novoArray = numeros.concat(objetos);
+    console.log(novoArray); // ['carol', 'ana', 'beatriz', 'lucas', 'pedro', 'mesa', 'cadeira', 'lapis']
+    let pedacoArray = novoArray.slice(2, 5);
+    console.log(pedacoArray);
+  </script>
+</html>
